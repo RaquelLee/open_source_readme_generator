@@ -1,7 +1,3 @@
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
 const generateMarkdown = data =>
   `# ${data.title}
   ${renderLicenseBadge(renderLicenseLink(data.license))}
@@ -70,3 +66,5 @@ const renderLicenseLink = license => {
       return "Unilicense-brightgreen";
   };
 };
+
+const d = new Date();
