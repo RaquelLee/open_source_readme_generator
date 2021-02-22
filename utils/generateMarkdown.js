@@ -35,8 +35,7 @@ const generateMarkdown = data =>
 
   If you have any questions, please reach me at <a href="mailto:${data.email}">${data.email}</a>
   ${renderLicenseHeader(data.license)}
-  ${renderLicenseSection(data.license, data.name)}
-  `
+  ${renderLicenseSection(data.license, data.name)}`
   ;
 
 module.exports = generateMarkdown;
@@ -44,3 +43,5 @@ module.exports = generateMarkdown;
 const renderLicenseToc = license => license === "none" ?  "" : "* [License](#License)";
 
 const renderLicenseHeader = license => license === "none" ? "" : "## License";
+
+const renderLicenseBadge = license => license === "" ?  "" : '![license](https://img.shields.io/badge/license-' + license + ')';
