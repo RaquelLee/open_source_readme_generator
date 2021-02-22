@@ -10,11 +10,33 @@ function renderLicenseLink(license) {}
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+const generateMarkdown = data =>
+  `# ${data.title}
+  ${renderLicenseBadge(renderLicenseLink(data.license))}
+  ## Description
+  ${data.description}
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#Questions)
+  ${renderLicenseToc(data.license)}
+  ## Installation
+  ${data.installation}
+  ## Usage
+  ${data.usage}
+  ## Contributing
+  ${data.contributing}
+  ## Tests
+  ${data.tests}
+  ## Questions
+  View my GitHub profile [here!](http://github.com/${data.github})
 
-`;
-}
+  If you have any questions, please reach me at <a href="mailto:${data.email}">${data.email}</a>
+  ${renderLicenseHeader(data.license)}
+  ${renderLicenseSection(data.license, data.name)}
+  `
+  ;
 
 module.exports = generateMarkdown;
