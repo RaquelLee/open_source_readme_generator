@@ -1,11 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
@@ -45,3 +37,36 @@ const renderLicenseToc = license => license === "none" ?  "" : "* [License](#Lic
 const renderLicenseHeader = license => license === "none" ? "" : "## License";
 
 const renderLicenseBadge = license => license === "" ?  "" : '![license](https://img.shields.io/badge/license-' + license + ')';
+
+const renderLicenseLink = license => {
+  switch(license){
+    case "none":
+      return "";
+    case "Apache License 2.0":
+      return "Apache--2.0-green";
+    case "GNU General Public License v3.0":
+      return "GPL--3.0-orange";
+    case "MIT License":
+      return "MIT-green";
+    case 'BSD 2-Clause "Simplified" License':
+      return "BSD--2--Clause-green";
+    case 'BSD 3-Clause "New" or "Revised" License':
+      return "BSD--3--Clause-green";
+    case "Boost Software License 1.0":
+      return "BSL--1.0-green";
+    case "Creative Commons Zero v1.0 Universal":
+      return "CC0--1.0-brightgreen";
+    case "Eclipse Public License 2.0":
+      return "EPL--2.0-orange";
+    case "GNU Affero General Public License v3.0":
+      return "AGPL--3.0-orange";
+    case "GNU General Public License v2.0":
+      return "GPL--2.0-orange";
+    case "GNU Lesser General Public License v2.1":
+      return "LGPL--2.1-orange";
+    case "Mozilla Public License 2.0":
+      return "MPL--2.0-orange";
+    case "The Unilicense":
+      return "Unilicense-brightgreen";
+  };
+};
