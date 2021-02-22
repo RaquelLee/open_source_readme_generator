@@ -77,8 +77,11 @@ const writeToFile = (fileName, data) => {
     }
 )};
 
-// TODO: Create a function to initialize app
-function init() {}
+const init = () => {
+    inquirer.prompt(questions).then((data) => {
+        const fileName = ("README.md");
+        writeToFile(fileName, func(data));
+    });
+};
 
-// Function call to initialize app
 init();
