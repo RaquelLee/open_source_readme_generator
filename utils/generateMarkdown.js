@@ -40,3 +40,5 @@ const generateMarkdown = data =>
   ;
 
 module.exports = generateMarkdown;
+
+const renderLicenseToc = license => license === "none" ?  "" : "* [License](#License)";
