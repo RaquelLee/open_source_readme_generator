@@ -68,3 +68,36 @@ const renderLicenseLink = license => {
 };
 
 const d = new Date();
+
+const renderLicenseSection = (license, name) => {
+  switch(license){
+    case "none":
+      return "";
+    case "Apache License 2.0":
+      return 'Copyright ' + d.getFullYear() + "  " + name + '<br /> Licensed under the Apache License, Version 2.0. You may obtain a copy of the License at <br /> http://www.apache.org/licenses/LICENSE-2.0';
+    case "GNU General Public License v3.0":
+      return "GNU GENERAL PUBLIC LICENSE <br /> Version 3, 29 June 2007 <br /> Copyright (C) 2007 Free Software Foundation, Inc. https://fsf.org/";
+    case "MIT License":
+      return "MIT License <br /> Copyright (c) " + d.getFullYear() + " " + name;
+    case 'BSD 2-Clause "Simplified" License':
+      return "BSD 2-Clause License <br /> Copyright (c) " + d.getFullYear() + "," + name + " All rights reserved.";
+    case 'BSD 3-Clause "New" or "Revised" License':
+      return "BSD 3-Clause License <br /> Copyright (c) " + d.getFullYear() + "," + name + " All rights reserved.";
+    case "Boost Software License 1.0":
+      return "Boost Software License - Version 1.0 - August 17th, 2003";
+    case "Creative Commons Zero v1.0 Universal":
+      return "Creative Commons Legal Code <br /> CC0 1.0 Universal";
+    case "Eclipse Public License 2.0":
+      return "Eclipse Public License - v 2.0";
+    case "GNU Affero General Public License v3.0":
+      return "GNU AFFERO GENERAL PUBLIC LICENSE <br /> Version 3, 19 November 2007<br /> Copyright (C) 2007 Free Software Foundation, Inc. https://fsf.org/";
+    case "GNU General Public License v2.0":
+      return "GNU GENERAL PUBLIC LICENSE <br /> Version 2, June 1991 <br /> ";
+    case "GNU Lesser General Public License v2.1":
+      return "GNU LESSER GENERAL PUBLIC LICENSE <br /> Version 2.1, February 1999";
+    case "Mozilla Public License 2.0":
+      return "Mozilla Public License 2.0, viewable at http://mozilla.org/MPL/2.0/.";
+    case "The Unilicense":
+      return "This is free and unencumbered software released into the public domain. <br /> For more information, please refer to https://unlicense.org";
+  };
+  };
