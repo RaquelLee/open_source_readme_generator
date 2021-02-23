@@ -1,27 +1,25 @@
-# professional_readme_generator
-![license](https://img.shields.io/github/license/raquellee/professional_readme_generator)<br />
-A command-line application created for developers that takes user input and dynamically generates a README.md file for their project's GitHub repository!
+# opensource readme generator
+  ![license](https://img.shields.io/badge/license-Apache--2.0-green)
+  ## Description
+  create an opensource readme generator with this command line application
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#Questions)
+  * [License](#License)
+  ## Installation
+  run node index
+  ## Usage
+  after invoking the application, you will be prompted to answer questions relative to your application
+  ## Contributing
+  plese check our code of conduct if you would like to contribute!
+  ## Tests
+  no tests yet
+  ## Questions
+  View my GitHub profile [here!](http://github.com/raquellee)
 
-README parameters include every section needed for a high quality open source project: Title, Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. This application will also generate a unique badge based on user selection of license.
-
-## Technologies Used 
-* Node.js
-* Terminal
-* Inquirer NPM Package
-
-## Installation
-This application can be invoked by using the following command:
-
-```bash
-node index.js
-```
-## Walk-through Video
-### Video
-### Link to Video
-
-## License 
-MIT License
-
-Copyright (c) 2021 Raquel Scofield
-
-https://img.shields.io/github/followers/raquellee?label=Follow&style=social
+  If you have any questions, please reach me at <a href="mailto:raquel@gmail.com">raquel@gmail.com</a>
+  ## License
+  Copyright 2021  raquel scofield<br /> Licensed under the Apache License, Version 2.0. You may obtain a copy of the License at <br /> http://www.apache.org/licenses/LICENSE-2.0
