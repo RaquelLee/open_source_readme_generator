@@ -16,7 +16,7 @@ This application can be invoked by using the following command:
 node index.js
 ```
 ## Walk-through Video
-### Video
+<iframe src="https://drive.google.com/file/d/1OUW_8ta5zUYDDmfsr9HYdCzKUjnrvoFa/preview" width="640" height="480"></iframe>
 ### Link to Video
 
 ## License 
