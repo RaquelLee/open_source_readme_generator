@@ -1,4 +1,4 @@
-# professional_readme_generator
+# open_source_readme_generator
 ![license](https://img.shields.io/github/license/raquellee/professional_readme_generator)<br />
 A command-line application created for developers that takes user input and dynamically generates a README.md file for their project's GitHub repository!
 
