@@ -16,10 +16,9 @@ This application can be invoked by using the following command:
 node index.js
 ```
 ## Walk-through Video
-![functionalitygif]()
+![functionalitygif](https://github.com/RaquelLee/open_source_readme_generator/blob/main/assets/images/readmeGenerator.gif)
 
-## Link to Video
-https://drive.google.com/file/d/1PP9akU8zb4sHfyAdX3eqvldZ7pIV09ub/view
+[View Video](https://drive.google.com/file/d/1PP9akU8zb4sHfyAdX3eqvldZ7pIV09ub/view)
 
 ## License 
 MIT License
